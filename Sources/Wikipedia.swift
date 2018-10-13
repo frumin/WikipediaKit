@@ -56,7 +56,16 @@ public class Wikipedia {
     public var maxAgeInSeconds = 60 * 60 * 2 // 2 hours by default
     
     public static func baseURL(language: WikipediaLanguage) -> URL? {
-        return URL(string:"https://\(language.code).wikipedia.org/w/api.php")
+        let wikiPath = WikipediaNetworking.wikiAPIPath.normalizedPath
+        var path = wikiPath.components(separatedBy: "/")
+        path.append("api.php")
+        
+        var components = URLComponents()
+        components.host = WikipediaNetworking.wikiHostname
+        components.scheme = "https"
+        components.path = path.joined(separator: "/")
+        
+        return components.url
     }
     
     // We need a way to cancel these nested requests before starting new ones.
@@ -92,4 +101,17 @@ public class Wikipedia {
         return parts.joined(separator: "&")
     }
    
+}
+
+private extension String {
+    var normalizedPath: String {
+        var string = self
+        if string.hasPrefix("/") == false {
+            string = "/" + string
+        }
+        if string.hasSuffix("/") {
+            string = String(string.dropLast())
+        }
+        return string
+    }
 }
