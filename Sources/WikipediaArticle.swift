@@ -52,14 +52,14 @@ public class WikipediaArticle {
     
     public lazy var url: URL? = {
         let escapedTitle = self.title.wikipediaURLEncodedString()
-        let urlString = "https://" + self.language.code + ".wikipedia.org/wiki/" + escapedTitle
+        let urlString = "https://" + self.language.code + ".\(WikipediaNetworking.wikiHostname)/wiki/" + escapedTitle
         let url = URL(string: urlString)
         return url
     }()
     
     public lazy var editURL: URL? = {
         let escapedTitle = self.title.wikipediaURLEncodedString()
-        let editURLString = "https://" + self.language.code + ".m.wikipedia.org/w/index.php?action=edit&title=" + escapedTitle
+        let editURLString = "https://" + self.language.code + ".m.\(WikipediaNetworking.wikiHostname)/w/index.php?action=edit&title=" + escapedTitle
         let editURL = URL(string: editURLString)
         return editURL
     }()

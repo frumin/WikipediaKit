@@ -102,7 +102,7 @@ extension Wikipedia {
         
         let dateString = dateFormatter.string(from: date)
         
-        let urlString = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/\(language.code).wikipedia.org/all-access/" + dateString
+        let urlString = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/\(language.code).\(WikipediaNetworking.wikiHostname)/all-access/" + dateString
         
         guard let url = URL(string: urlString)
             else {

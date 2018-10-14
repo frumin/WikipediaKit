@@ -40,7 +40,7 @@ extension Wikipedia {
 
             // We use the REST API here because that’s what the Wikipedia website calls for the link hover previews.
             // It’s very fast.
-            let urlString = "https://\(language.code).wikipedia.org/api/rest_v1/page/summary/\(title)"
+            let urlString = "https://\(language.code).\(WikipediaNetworking.wikiHostname)/api/rest_v1/page/summary/\(title)"
 
             guard let url = URL(string: urlString)
                 else {

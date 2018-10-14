@@ -74,7 +74,7 @@ public class WikipediaArticlePreview: Hashable, Equatable {
     
     public lazy var url: URL? = {
         let escapedTitle = self.title.wikipediaURLEncodedString()
-        let urlString = "https://" + self.language.code + ".wikipedia.org/wiki/" + escapedTitle
+        let urlString = "https://" + self.language.code + ".\(WikipediaNetworking.wikiHostname)/wiki/" + escapedTitle
         let url = URL(string: urlString)
         return url
     }()

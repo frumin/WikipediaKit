@@ -43,7 +43,7 @@ extension URL {
     }
     
     public func isWikipediaArticleURL() -> Bool {
-        let pattern = "^(https?://)?(www\\.)?([^.].*\\.wikipedia.org)?/wiki/.+$"
+        let pattern = "^(https?://)?(www\\.)?([^.].*\\.\(WikipediaNetworking.wikiHostname))?/wiki/.+$"
         
         let absoluteURLString = self.absoluteString
         if let _ = absoluteURLString.range(of: pattern, options: .regularExpression) {
@@ -77,7 +77,7 @@ extension URL {
     }
     
     public func isWikipediaScrollURL() -> Bool {
-        let isHostWikipedia = self.host != nil ? self.host!.range(of: ".wikipedia.org") != nil : false
+        let isHostWikipedia = self.host != nil ? self.host!.range(of: ".\(WikipediaNetworking.wikiHostname)") != nil : false
         let pathPointsToSiteRoot = self.path != "" ? self.path == "/" : false
         let hasFragment = self.fragment != nil ? (self.fragment!).count > 0 : false
         return isHostWikipedia && pathPointsToSiteRoot && hasFragment
