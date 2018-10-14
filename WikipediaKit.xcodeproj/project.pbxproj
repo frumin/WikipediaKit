@@ -125,6 +125,14 @@
 		27E365C41E81C9F200F39F78 /* WikipediaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3651A1E81767000F39F78 /* WikipediaError.swift */; };
 		27E365C51E81C9F500F39F78 /* URL+Wikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3652E1E81773900F39F78 /* URL+Wikipedia.swift */; };
 		27E365C71E81C9F500F39F78 /* String+Wikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E365301E8177A800F39F78 /* String+Wikipedia.swift */; };
+		E2AB647C2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */; };
+		E2AB647D2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */; };
+		E2AB647E2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */; };
+		E2AB647F2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */; };
+		E2AB64812172C617006DA5AD /* WikipediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */; };
+		E2AB64822172C617006DA5AD /* WikipediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */; };
+		E2AB64832172C617006DA5AD /* WikipediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */; };
+		E2AB64842172C617006DA5AD /* WikipediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +189,8 @@
 		27E365AC1E81C9E300F39F78 /* WikipediaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WikipediaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E365AE1E81C9E300F39F78 /* WikipediaKit-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikipediaKit-tvOS.h"; sourceTree = "<group>"; };
 		27E365AF1E81C9E300F39F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wikipedia+Meta.swift"; sourceTree = "<group>"; };
+		E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +260,7 @@
 				274062B3210F5ADD009808A6 /* Wikipedia+ArticleSummary.swift */,
 				27E365381E81981900F39F78 /* Wikipedia+ImageMeta.swift */,
 				27E3653E1E8198D000F39F78 /* Wikipedia+Languages.swift */,
+				E2AB647B2172C285006DA5AD /* Wikipedia+Meta.swift */,
 				27E365401E81990100F39F78 /* Wikipedia+MostRead.swift */,
 				27E365361E81975E00F39F78 /* Wikipedia+NearbySearch.swift */,
 				2721FC321EE86F140025EC74 /* Wikipedia+RandomArticles.swift */,
@@ -333,6 +344,7 @@
 				27E3651A1E81767000F39F78 /* WikipediaError.swift */,
 				27E3651C1E81767000F39F78 /* WikipediaImage.swift */,
 				27E3651D1E81767000F39F78 /* WikipediaLanguage.swift */,
+				E2AB64802172C617006DA5AD /* WikipediaMetadata.swift */,
 				2759060D1E83025B000C3ACA /* WikipediaNamespace.swift */,
 				274EFCD21EB773200047428B /* WikipediaSearchMethod.swift */,
 				27E3651F1E81767000F39F78 /* WikipediaSearchResults.swift */,
@@ -602,6 +614,7 @@
 				27E365371E81975E00F39F78 /* Wikipedia+NearbySearch.swift in Sources */,
 				27E365271E81767000F39F78 /* WikipediaError.swift in Sources */,
 				275906071E8301F6000C3ACA /* WikipediaTextFormattingDelegate.swift in Sources */,
+				E2AB64812172C617006DA5AD /* WikipediaMetadata.swift in Sources */,
 				27E3652A1E81767000F39F78 /* WikipediaLanguage.swift in Sources */,
 				274062B4210F5ADD009808A6 /* Wikipedia+ArticleSummary.swift in Sources */,
 				27E3652B1E81767000F39F78 /* WikipediaNetworking.swift in Sources */,
@@ -623,6 +636,7 @@
 				2759060C1E830237000C3ACA /* WikipediaBlacklistDelegate.swift in Sources */,
 				27E365391E81981900F39F78 /* Wikipedia+ImageMeta.swift in Sources */,
 				27E3653B1E81987E00F39F78 /* Wikipedia+Search.swift in Sources */,
+				E2AB647C2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */,
 				27E3653F1E8198D000F39F78 /* Wikipedia+Languages.swift in Sources */,
 				27E365251E81767000F39F78 /* WikipediaArticlePreview.swift in Sources */,
 				27E365311E8177A800F39F78 /* String+Wikipedia.swift in Sources */,
@@ -637,6 +651,7 @@
 				27E365571E81AD5300F39F78 /* Wikipedia+Search.swift in Sources */,
 				27E365551E81AD5300F39F78 /* Wikipedia+MostRead.swift in Sources */,
 				275906081E8301FA000C3ACA /* WikipediaTextFormattingDelegate.swift in Sources */,
+				E2AB64822172C617006DA5AD /* WikipediaMetadata.swift in Sources */,
 				27E365641E81AD5700F39F78 /* String+Wikipedia.swift in Sources */,
 				274062B5210F5E46009808A6 /* Wikipedia+ArticleSummary.swift in Sources */,
 				275906151E83026E000C3ACA /* WikipediaBlacklistDelegate.swift in Sources */,
@@ -658,6 +673,7 @@
 				27E3655A1E81AD5300F39F78 /* WikipediaArticleLanguageLink.swift in Sources */,
 				27E3655D1E81AD5300F39F78 /* WikipediaImage.swift in Sources */,
 				27DFDF831EB27232005DFA7E /* WikipediaNetworkingActivityDelegate.swift in Sources */,
+				E2AB647D2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */,
 				27E3655F1E81AD5300F39F78 /* WikipediaNetworking.swift in Sources */,
 				27E365611E81AD5300F39F78 /* WikipediaSearchResultsCache.swift in Sources */,
 				27E365511E81AD5300F39F78 /* Wikipedia.swift in Sources */,
@@ -672,6 +688,7 @@
 				27E365A21E81C98000F39F78 /* WikipediaError.swift in Sources */,
 				27E365951E81C98000F39F78 /* Wikipedia+ImageMeta.swift in Sources */,
 				275906091E8301FA000C3ACA /* WikipediaTextFormattingDelegate.swift in Sources */,
+				E2AB64832172C617006DA5AD /* WikipediaMetadata.swift in Sources */,
 				27E365A51E81C98400F39F78 /* String+Wikipedia.swift in Sources */,
 				274062B6210F5E46009808A6 /* Wikipedia+ArticleSummary.swift in Sources */,
 				275906131E83026D000C3ACA /* WikipediaBlacklistDelegate.swift in Sources */,
@@ -693,6 +710,7 @@
 				27E3659D1E81C98000F39F78 /* WikipediaImage.swift in Sources */,
 				27E3659E1E81C98000F39F78 /* WikipediaLanguage.swift in Sources */,
 				27DFDF841EB27233005DFA7E /* WikipediaNetworkingActivityDelegate.swift in Sources */,
+				E2AB647E2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */,
 				27E365A11E81C98000F39F78 /* WikipediaSearchResultsCache.swift in Sources */,
 				27E3659B1E81C98000F39F78 /* WikipediaArticleLanguageLink.swift in Sources */,
 				27E365931E81C98000F39F78 /* WikipediaNetworking.swift in Sources */,
@@ -707,6 +725,7 @@
 				27E365C41E81C9F200F39F78 /* WikipediaError.swift in Sources */,
 				27E365B71E81C9F200F39F78 /* Wikipedia+ImageMeta.swift in Sources */,
 				2759060A1E8301FB000C3ACA /* WikipediaTextFormattingDelegate.swift in Sources */,
+				E2AB64842172C617006DA5AD /* WikipediaMetadata.swift in Sources */,
 				27E365C71E81C9F500F39F78 /* String+Wikipedia.swift in Sources */,
 				274062B7210F5E47009808A6 /* Wikipedia+ArticleSummary.swift in Sources */,
 				275906121E83026C000C3ACA /* WikipediaBlacklistDelegate.swift in Sources */,
@@ -728,6 +747,7 @@
 				27E365BF1E81C9F200F39F78 /* WikipediaImage.swift in Sources */,
 				27E365C01E81C9F200F39F78 /* WikipediaLanguage.swift in Sources */,
 				27DFDF851EB27233005DFA7E /* WikipediaNetworkingActivityDelegate.swift in Sources */,
+				E2AB647F2172C285006DA5AD /* Wikipedia+Meta.swift in Sources */,
 				27E365C31E81C9F200F39F78 /* WikipediaSearchResultsCache.swift in Sources */,
 				27E365BD1E81C9F200F39F78 /* WikipediaArticleLanguageLink.swift in Sources */,
 				27E365B51E81C9F200F39F78 /* WikipediaNetworking.swift in Sources */,
