@@ -32,7 +32,7 @@ import Foundation
 public class WikipediaNetworking {
     
     public static var appAuthorEmailForAPI = ""
-    public static var wikiHostname = "wikipedia.com"
+    public static var wikiHostname = "wikipedia.org"
     public static var wikiAPIPath = "w"
     
     public static let shared: WikipediaNetworking = {
