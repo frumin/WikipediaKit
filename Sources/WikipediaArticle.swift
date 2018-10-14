@@ -37,6 +37,8 @@ public class WikipediaArticle {
     public var displayTitle: String
     
     public var rawText = ""
+    public var wikiText = ""
+    
     public lazy var displayText: String = {
         return Wikipedia.sharedFormattingDelegate?.format(context: .article, rawText: self.rawText, title: self.title, language: self.language, isHTML: true) ?? self.rawText
     }()
@@ -95,6 +97,7 @@ extension WikipediaArticle {
         }
         
         var text = ""
+        var wikitext = ""
         var toc = [WikipediaTOCItem]()
         
         for section in sections {
@@ -111,6 +114,9 @@ extension WikipediaArticle {
                     let sectionTocLevel = section["toclevel"] as? Int ?? 0
                     toc.append(WikipediaTOCItem(title: sectionTitle, anchor: sectionAnchor, tocLevel: sectionTocLevel))
                 }
+            }
+            if let sectionWikiText = section["wikitext"] as? String {
+                wikitext += sectionWikiText
             }
         }
         
@@ -136,6 +142,7 @@ extension WikipediaArticle {
         self.scrollToFragment = fragment
 
         self.rawText = text
+        self.wikiText = wikitext
         self.toc = toc
 
         if let imageProperties = mobileview["image"] as? JSONDictionary,

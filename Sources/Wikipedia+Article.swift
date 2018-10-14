@@ -51,7 +51,7 @@ extension Wikipedia {
             "format": "json",
             "page": title,
             "mobileformat": "1",
-            "prop": "id|text|sections|languagecount|displaytitle|description|image|thumb",
+            "prop": "id|text|wikitext|sections|languagecount|displaytitle|description|image|thumb",
             "sections": "all",
             "sectionprop": "toclevel|level|line|anchor",
             "thumbwidth" : "\(imageWidth)",
